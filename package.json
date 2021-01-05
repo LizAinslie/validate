@@ -1,0 +1,12 @@
+{
+  "name": "@synapsetech/validate",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/SynapseTech/validate"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  }
+}
