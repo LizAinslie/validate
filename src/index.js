@@ -49,7 +49,7 @@ class StringValidator extends Validator {
         this.apply = value => {
             let valid = true;
 
-            if (!(value instanceof String) || typeof value !== 'string') valid = false;
+            if (typeof value !== 'string') valid = false;
             if (params.hasOwnProperty('regex') && !params.regex.test(value)) valid = false;
             if (params.hasOwnProperty('enum') && !params.enum.includes(value)) valid = false;
             if (params.hasOwnProperty('func') && !params.func(value)) valid = false;
